@@ -1,0 +1,55 @@
+1- var vs let vs const 
+
+
+بستخدمهم عشان اعلن عن متغير
+
+------------------let-------------------
+let بعرف متغير ممكن قيمته تتغير 
+let age = 30;
+age = 31;
+او اعرف متغير فاضي وبعد كدا ابقي اخزن فيه قميه معينه
+let years;
+years = 1991;
+------------------const-------------------
+let بعرف متغير  قيمته مش هتتغير 
+const age = 30;
+------------------var--------------------
+نفس let 
+ولكن Old way
+
+
+
+
+
+
+
+
+
+
+
+
+2- alert vs prompt vs confirm.
+عن طريقهم بظهر رسايل للصفحه
+------------------alert--------------------
+بيطلب رساله هتظهر للشخص ومش محتاجه اي رد مجرد هتظهر 
+------------------confirm--------------------
+رساله تاكيد ينفذ اكشن معين او لا بيرجع
+true or false 
+let msg = confirm("are you sure?")
+
+if(msg === true){
+  console.log("item deleted")
+}else{
+  console.log("item not deleted")
+}
+------------------prompt--------------------
+رساله بتطلب اجابه وعلي اساسها بنفذ اكشن
+prompt(message, defaultValue)
+
+let person = prompt("Please enter your name", "Harry Potter");
+
+if (person != null) {
+  document.getElementById("demo").innerHTML =
+  "Hello " + person + "! How are you today?";
+}
+
